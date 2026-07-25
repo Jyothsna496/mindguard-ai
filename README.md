@@ -1,169 +1,196 @@
 # 🧠 MindGuard AI
 
-**MindGuard AI** is an AI-powered wellness platform designed to help users monitor their daily well-being, identify potential burnout risk, understand wellness trends, and receive personalized guidance through an AI wellness coach.
+### AI-Powered Burnout Risk Monitoring & Personalized Wellness Companion
 
-The platform combines daily wellness check-ins, burnout risk assessment, historical analytics, and generative AI to encourage users to recognize unhealthy patterns early and take practical action.
+**MindGuard AI** is a wellness platform that helps users monitor daily well-being, identify potential burnout risk, track changes over time, and receive personalized AI-powered guidance.
+
+Instead of waiting until burnout begins affecting productivity and well-being, MindGuard encourages users to recognize unhealthy patterns early and take practical action.
 
 ---
 
 ## 🚀 Live Demo
 
-🔗 **Live Application:** (https://mindguard-ai-184ec.web.app/login)
+🌐 **https://mindguard-ai-184ec.web.app/login**
+
+> Try the daily check-in, view your burnout risk indicator, explore wellness trends, and interact with the AI Wellness Coach.
+
+---
+
+## ✨ Key Features
+
+- 🔐 **Secure Authentication** — Email/password login and Google Sign-In
+- 📝 **Daily Wellness Check-In** — Track key lifestyle and wellness indicators
+- 🧠 **Burnout Risk Assessment** — Generate a burnout risk score and classification
+- 📊 **Personalized Dashboard** — View wellness indicators and latest insights
+- 📈 **Trend Analysis** — Visualize burnout risk changes across check-ins
+- 🤖 **AI Wellness Coach** — Receive personalized guidance powered by Gemini
+- 📚 **Assessment History** — Review previous wellness check-ins
+- 💡 **Personalized Insights** — Recommendations based on wellness indicators
+
+---
+
+# 📸 Product Preview
+
+## 🔐 Login & Authentication
+
+Secure access through email/password authentication and Google Sign-In.
+
+<img width="959" height="468" alt="Screenshot 2026-07-25 163531" src="https://github.com/user-attachments/assets/27528df6-0fc6-49f1-8e33-ab047bdc6632" />
+
+
+
+## 🏠 Wellness Dashboard
+
+A personalized dashboard showing burnout risk, wellness indicators, AI insights, and assessment progress.
+
+<img width="956" height="471" alt="Screenshot 2026-07-25 163605" src="https://github.com/user-attachments/assets/1aaebb1d-a298-47b4-80a0-6d67ce9f4f9c" />
+
+<img width="782" height="359" alt="Screenshot 2026-07-25 163619" src="https://github.com/user-attachments/assets/be11d7a1-49ca-446b-a6a8-f0239b20156b" />
+
+
+## 📝 Daily Wellness Check-In
+
+Users can record sleep, stress, mood, workload, hydration, screen time, exercise, and daily reflections.
+
+<img width="955" height="470" alt="Screenshot 2026-07-25 163735" src="https://github.com/user-attachments/assets/e4c2b253-2009-424f-8175-c9d66ffc01eb" />
+
+
+## 📈 Wellness History & Trends
+
+Previous assessments are stored and visualized to help users understand how their burnout risk changes over time.
+
+<img width="958" height="470" alt="Screenshot 2026-07-25 163638" src="https://github.com/user-attachments/assets/b9047fe6-42a7-47aa-867a-8556e35b9780" />
+
+
+## 🤖 AI Wellness Coach
+
+The AI Wellness Coach provides contextual wellness guidance and recommendations based on user questions and wellness information.
+
+<img width="950" height="470" alt="Screenshot 2026-07-25 163719" src="https://github.com/user-attachments/assets/0927d06d-a634-4e38-b4a0-444c55ee1bbe" />
+
 
 ---
 
 ## 💡 The Problem
 
-Burnout often develops gradually through factors such as poor sleep, prolonged stress, excessive workload, low mood, dehydration, and unhealthy digital habits.
+Burnout rarely happens overnight.
 
-Most people notice these patterns only after they begin affecting productivity and well-being.
+It can gradually develop through factors such as:
+
+- Poor sleep
+- Prolonged stress
+- Excessive workload
+- Low mood
+- Lack of exercise
+- Insufficient hydration
+- Excessive screen time
+
+People often recognize these patterns only after they begin affecting productivity and overall well-being.
 
 **MindGuard AI aims to make these patterns visible earlier.**
 
-Instead of simply tracking habits, the platform analyzes daily wellness indicators, estimates burnout risk, tracks changes over time, and provides personalized AI-powered guidance.
+The platform combines wellness tracking, risk assessment, historical analytics, and generative AI to help users better understand their daily wellness patterns.
 
 ---
 
-## ✨ Features
+## ⚙️ How MindGuard Works
 
-### 🔐 Authentication
+```text
+                 User
+                   │
+                   ▼
+          Firebase Authentication
+                   │
+                   ▼
+           Daily Wellness Check-In
+                   │
+                   ▼
+          Burnout Risk Assessment
+                   │
+          ┌────────┴────────┐
+          ▼                 ▼
+      Dashboard          History
+          │                 │
+          ▼                 ▼
+     AI Insights       Trend Analysis
+          │
+          ▼
+     AI Wellness Coach
+```
 
-- Email and password authentication
-- Google Sign-In
-- Secure user sessions
-- Protected application routes
-- User profile and logout functionality
+---
 
-### 📝 Daily Wellness Check-In
+## 📝 Wellness Indicators
 
-Users can record daily wellness indicators including:
+The daily assessment considers:
 
-- 😴 Sleep hours
-- 😰 Stress level
-- 😊 Mood
-- 💼 Work hours
-- 💧 Water intake
-- 💻 Screen time
-- 🏃 Exercise
-- 📒 Personal journal entry
+| Indicator | Description |
+|---|---|
+| 😴 Sleep | Daily sleep duration |
+| 😰 Stress | Self-reported stress level |
+| 😊 Mood | Daily mood rating |
+| 💼 Work Hours | Time spent working/studying |
+| 💧 Hydration | Daily water intake |
+| 💻 Screen Time | Time spent using digital devices |
+| 🏃 Exercise | Whether physical activity was completed |
+| 📒 Journal | Optional daily reflection |
 
-### 🧠 Burnout Risk Assessment
+These indicators are used to calculate a wellness-oriented burnout risk indicator.
 
-MindGuard analyzes the user's wellness indicators and generates:
+---
+
+## 🧠 Burnout Risk Assessment
+
+After completing a check-in, MindGuard generates:
 
 - Burnout risk score
 - Low / Moderate / High risk classification
-- Visual burnout indicator
+- Visual risk indicator
 - Personalized wellness insights
 
-> The burnout score is a wellness risk indicator and is not intended as a medical diagnosis.
+The results can then be tracked across multiple assessments to identify changes in wellness patterns.
 
-### 📊 Wellness Dashboard
+> **Note:** The burnout score is a wellness risk indicator and is not intended to provide a medical diagnosis.
 
-The dashboard provides a quick overview of:
+---
 
-- Latest burnout score
-- Current risk level
-- Number of assessments
-- Latest check-in
-- Wellness indicators
-- Personalized recommendations
+## 🤖 AI Wellness Coach
 
-### 📈 History & Trend Analysis
+MindGuard integrates Google's Gemini API to provide an interactive AI wellness companion.
 
-Users can review previous assessments and visualize how their burnout risk changes over time.
-
-This helps identify patterns across multiple daily check-ins rather than viewing each assessment in isolation.
-
-### 🤖 AI Wellness Coach
-
-MindGuard includes an AI-powered wellness coach that provides contextual guidance based on user questions and wellness information.
-
-Users can ask about:
+Users can ask for guidance related to:
 
 - Stress management
-- Sleep improvement
-- Workload
-- Focus
-- Wellness habits
-- Their latest assessment
+- Sleep habits
+- Workload management
+- Focus and productivity
+- Wellness routines
+- Their latest wellness assessment
+
+The goal is to transform wellness data into practical, understandable actions.
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-
 - React
 - Vite
 - Tailwind CSS
 - React Router
 
 ### Data Visualization
-
 - Recharts
 
-### Authentication & Deployment
-
+### Authentication & Hosting
 - Firebase Authentication
 - Firebase Hosting
 
 ### Artificial Intelligence
-
 - Google Gemini API
 
 ### Storage
-
 - Browser Local Storage for assessment history in the current MVP
-
----
-
-## 🏗️ How It Works
-
-```text
-User
- │
- ▼
-Firebase Authentication
- │
- ▼
-Daily Wellness Check-In
- │
- ▼
-Burnout Risk Assessment
- │
- ├───────────────┐
- ▼               ▼
-Dashboard       History
- │               │
- ▼               ▼
-Insights      Trend Analysis
- │
- ▼
-AI Wellness Coach
-```
-
----
-
-## 🔄 User Flow
-
-```text
-Landing Page
-     ↓
-Login / Sign Up
-     ↓
-Dashboard
-     ↓
-Daily Check-In
-     ↓
-Burnout Risk Analysis
-     ↓
-Personalized Insights
-     ↓
-History & Trends
-     ↓
-AI Wellness Coach
-```
 
 ---
 
@@ -191,12 +218,12 @@ mindguard-ai/
 
 ---
 
-## ⚙️ Running Locally
+## 💻 Running the Project Locally
 
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone YOUR_GITHUB_REPOSITORY_URL
 ```
 
 ### 2. Navigate to the project
@@ -215,29 +242,29 @@ npm install
 
 Create a `.env` file in the project root and configure the required environment variables.
 
-**Never commit API keys or secrets to GitHub.**
+Never commit API keys or other secrets to GitHub.
 
-### 5. Start the development server
+### 5. Start the application
 
 ```bash
 npm run dev
 ```
 
-Open the local URL displayed by Vite.
+Vite will provide a local development URL.
 
 ---
 
 ## 🔮 Future Improvements
 
-- Firestore-based cloud assessment history
-- Cross-device wellness synchronization
-- More advanced burnout risk modelling
-- Personalized wellness goals
-- Smart reminders and notifications
-- Weekly wellness reports
-- Improved AI recommendations using historical trends
-- Secure server-side handling of AI requests
-- Additional wellness analytics and visualizations
+- ☁️ Firestore-based cloud assessment storage
+- 🔄 Cross-device wellness synchronization
+- 📊 More advanced burnout risk modelling
+- 🎯 Personalized wellness goals
+- 🔔 Smart reminders and notifications
+- 📅 Weekly wellness reports
+- 🧠 Historical context for AI recommendations
+- 🔐 Server-side AI API integration
+- 📈 Advanced wellness analytics
 
 ---
 
@@ -245,19 +272,15 @@ Open the local URL displayed by Vite.
 
 MindGuard AI is designed as a wellness and productivity support tool.
 
-The burnout risk score and AI-generated recommendations are informational and should **not be considered medical diagnoses or professional healthcare advice**.
-
-Sensitive credentials and API keys should never be committed to the repository.
+Burnout risk indicators and AI-generated recommendations are informational and should **not be considered medical diagnoses or professional healthcare advice**.
 
 ---
 
-## 🎯 Project Goal
+## 🎯 Vision
 
 MindGuard AI explores how AI, behavioral indicators, and data visualization can work together to create a more proactive approach to digital wellness.
 
-The goal is simple:
-
-> **Identify patterns early, understand your wellness, and take action before burnout takes over.**
+> **Recognize the pattern. Understand the risk. Take action early.**
 
 ---
 
@@ -265,5 +288,4 @@ The goal is simple:
 
 **Jyothsna R**
 
-Built as a hackathon project using React, Firebase, and Google Gemini.
-
+Built with React, Firebase, Tailwind CSS, Recharts, and Google Gemini.
