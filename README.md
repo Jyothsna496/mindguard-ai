@@ -8,7 +8,7 @@ The platform combines daily wellness check-ins, burnout risk assessment, histori
 
 ## 🚀 Live Demo
 
-🔗 **Live Application:** https://mindguard-ai-184ec.web.app
+🔗 **Live Application:** (https://mindguard-ai-184ec.web.app/login)
 
 ---
 
